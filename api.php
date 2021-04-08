@@ -14,7 +14,7 @@ define("DB_NAME", "cn36803_11"); //Имя базы данных
 
 
 if(!R::testConnection()) {
-    R::setup('mysql:host='.localhost.';dbname='.cn36803_11, cn36803_11, asddsa1);
+    R::setup('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USERNAME, DB_PASSWORD);
 }
 
 $pets = [
